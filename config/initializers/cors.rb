@@ -8,7 +8,7 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     # where your requests comes from: eg: your react's app IP address
-    origins "http://127.0.0.1:5173"
+    origins "http://localhost:5173"
     # production frontend URL - https://domain.com
     resource "*",
       headers: :any,
